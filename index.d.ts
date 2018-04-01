@@ -99,6 +99,8 @@ declare module 'react-native-swiper' {
         automaticallyAdjustContentInsets?: boolean
         // Enables/Disables swiping
         scrollEnabled?: boolean
+        // Set to true to fix rendering in Modal on Android
+        hasFloatingParent?: boolean
     }
 
     export default class Swiper extends Component<SwiperProps, any> {

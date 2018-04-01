@@ -620,7 +620,8 @@ export default class extends Component {
   }
 
   renderScrollView = pages => {
-    if (Platform.OS === 'ios') {
+    const { hasFloatingParent } = this.props;
+    if (Platform.OS === 'ios' || hasFloatingParent) {
       return (
         <ScrollView ref={this.refScrollView}
           {...this.props}
